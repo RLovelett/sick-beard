@@ -10,7 +10,6 @@ module SickBeard
       response = Client.request(@uri)
 
       if response.success?
-        puts "Class: #{response.data.class}"
         response.data.each_value do |obj|
           @shows << SickBeard::Show.new(obj)
         end
@@ -26,6 +25,12 @@ module SickBeard
         else
           yield show
         end
+      end
+    end
+
+    def [](tvdbid)
+      detect(nil) do |show|
+        show.tvdbid === tvdbid
       end
     end
   end

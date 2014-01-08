@@ -12,4 +12,5 @@ describe SickBeard::Shows, vcr: {
   subject { SickBeard::Shows.new }
   it { expect(subject).to have(18).shows }
   it { expect(subject.first).to be_a(SickBeard::Show) }
+  it { expect(subject[73388]).to be_a(SickBeard::Show) }
 end
