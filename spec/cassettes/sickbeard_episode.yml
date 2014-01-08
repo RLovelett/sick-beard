@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://<API_HOST>:<API_PORT>/api/<API_KEY>?cmd=episode&episode=1&full_path=1&season=13&tvdbid=73388
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDQz
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U2VydmVy":
+      - !binary |-
+        Q2hlcnJ5UHkvMy4yLjByYzE=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAwOCBKYW4gMjAxNCAyMjoyOTozMSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAEvRzVIC/21RwW7bMAy99ysIX3ZJFNvN1q2XAZ2LpUB3WYvuUiDgZMYW
+        LEueKDnNiv77JC/pamACdNDj43tP5PMZxJPV6DG7hOfpNSGoXAQpglmZF+tl
+        XizzdbaAf4yaWDo1eGVNYt0Y8K1iuPPo4Ac6Bh5IKtSLiBN8O/j2KrCnWPDE
+        HtQObkNH4Ai1PoC0QdfAe2UaaFXPpHeApoZbUggonWUGBNki97BXvgVrYlcy
+        /EnaL51qGqqhcTgMetKwtlscVdHA9d52oG1zdJAucJvwm34gF0PCY/alVbIj
+        E7Prjtxj/Gvy/6swJeXgRjUSKBOTeAwm3XdTAH34PJvNTmnasvqd5le8L8ti
+        /eki//hfxrYNPU4TLMS6hK9XMyFtJZ4mvBqsqVeOpHU11Us/rt4MdVWcP+WF
+        6Ltx1m+wn3b4upVLgO80kmkI7O51M7OeXwG18ofUtqng/mFWdKQJmbYn4TcR
+        xF1xfh0zJC+RvMTRSdidiE4iccVFmQ9iU90/iKfyw3pZbaqZPnv0gZNyZfdG
+        W4xfzabyy5GW9cSMzeR+ao2xOGifIA5SRkJ29vIHm2BO4NwCAAA=
+    http_version: 
+  recorded_at: Wed, 08 Jan 2014 22:29:31 GMT
+recorded_with: VCR 2.8.0

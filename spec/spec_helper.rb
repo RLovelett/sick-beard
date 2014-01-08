@@ -21,6 +21,13 @@ require 'sickbeard'
 
 require 'webmock/rspec'
 require 'vcr'
+require 'digest/md5'
+
+def api_uri
+  uri = 'http://example.com/'
+  uri = ENV['SICKBEARD_API_URI'] if ENV.has_key?('SICKBEARD_API_URI')
+  URI.parse(uri)
+end
 
 def api_key
   key = 'VALID_SICKBEARD_API_KEY'
@@ -28,10 +35,16 @@ def api_key
   key
 end
 
-def api_uri
-  uri = 'http://example.com:8080/'
-  uri = ENV['SICKBEARD_API_URI'] if ENV.has_key?('SICKBEARD_API_URI')
-  uri
+def api_host
+  api_uri.host
+end
+
+def api_port
+  api_uri.port
+end
+
+def api_scheme
+  api_uri.scheme
 end
 
 RSpec.configure do |config|
@@ -49,11 +62,12 @@ end
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
-  c.preserve_exact_body_bytes { true }
+  c.preserve_exact_body_bytes { false }
   c.configure_rspec_metadata!
 
   ##
   # Filter the real API key so that it does not make its way into the VCR cassette
   c.filter_sensitive_data('<API_KEY>')  { api_key }
-  c.filter_sensitive_data('<API_URI>')  { api_uri }
+  c.filter_sensitive_data('<API_HOST>')  { api_host }
+  c.filter_sensitive_data('<API_PORT>')  { api_port }
 end

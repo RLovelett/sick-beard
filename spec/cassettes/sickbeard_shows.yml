@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://<API_HOST>:<API_PORT>/api/<API_KEY>?cmd=shows&tvdbid=1245
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        OTU1
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "U2VydmVy":
+      - !binary |-
+        Q2hlcnJ5UHkvMy4yLjByYzE=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAwOCBKYW4gMjAxNCAyMToxODowNyBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAI/AzVIC/+2Yz2/TMBSA7/wVphdAopLtpPnBrenYxmFsWifGrXITqwlL
+        neI4G2Xa/47jwrQ2sdMqZBDBTmvei/zi78uL7fsXQP4NIiLI4B24V7/UFdey
+        PG/rkrpMEj6br2cyn8ogfAu2wyEJY1q5S4XmhDHKZQzt3KSiqywXm+hW7GF3
+        gJSwRUEW5RgDyga7YUbFXcZvyuhRkofZLeXrmqRvYkZXM/ksP59jgCGyhxAN
+        Eapkr0iR06juYb8WJE3Eurz/9MjFcFW5N4+zuxkjSzXG2VrEQVE+Zl5NFEQU
+        eZk1yZhIWJGwRSVJ3EbzpKxEsalGuZyXmUqwHTjSxOuqeUx8Ot3SANfBfTZg
+        HEz2Z4+H2O2O/Qmn61c5GDMismXVyEPxSzAm/JZr707xLv6dguoN8KDl+n02
+        YBJM9zcADaHfnQFXMQVBsgCBLB7IH1lNYzpMA0XHpIE3Qk0a1FWlccH2Ua+7
+        wcdDukG3LlwQfpMDwiJwSUNOiUiyaukHylDiMcmAkeM5DTbU1lWvgz+C8lvZ
+        Yx0O+jhIHbzudDjLIsoZOCbLJG3bFBQXowfYwTpR6gvSCoD/C/B7BCi78FkS
+        RSltTx+b6UPH1a0ca6qpR48cd+T+C+y7I35KVqs1eM8iidO0G5AZcjwt7w0J
+        I/CR4zQtAraL0TH3es58GiaUhRRM4nLg9M/yv4p5VixiIOS7dp3xZZy1fvc3
+        hIwu2D7ULRiNhWmUcB3f7rUSQTAB56w68aYDAtydFNOY8jQLb9qKoLgYRbBs
+        y2oQ4bEYDXzfQlav4X+4+lQ97HnWJnCU3TGRMTCez2nbdd+GhxG6/BA0HQpt
+        V1RPHiPsO70mPz77019/mqZATvN1TGna9jBww8NI3kV+E/mdkjToMbT7ves7
+        Dc73Qf8c3f4k4e3ZKyAm9hZE2G5gv6lEg9z2HK/X5z7H558PQm53h/wjvQPl
+        ZLelrpgY33jPgk3UH4vRgvcst8/g99zkPce7fklvKVu0XeFvkDRw93QJu7Vo
+        sI98CHuN/S963zcnKSxagwuefaGhaCuAgmMSwEL6zqCvSqOCgxwf9lqFA0zA
+        Q+x0a8J4SXkSEpaD13JI601bGRQeowzQtpv3+zWF6XzAdr9bw1QQ/v3l/k6g
+        IR5150SQkvAGTEnSfhmoyBhVwC5u2gI8rUdngO/AXi8GS90n1wcZYHVnwCVN
+        Fux3dYMSjVEBe6RtF1sFPYGv/vs13YMlzfOfs/yrkAGneZGK8lJehKFMGLx4
+        +AE8BjhOVCQAAA==
+    http_version: 
+  recorded_at: Wed, 08 Jan 2014 21:18:07 GMT
+recorded_with: VCR 2.8.0
