@@ -34,11 +34,21 @@ Or install it yourself as:
 
     require 'sickbeard'
     SickBeard.key = 'b41c7591977d20e3582774105246e916'
-    SickBeard.client = 'http://toodles:8081'
+    SickBeard.client = 'http://example.com/'
 
     shows = SickBeard::Shows.new
     shows.map { |show| show.name } # Array of all the show names
-    shows[73388] # Return the show with the specified TVDBID
+    mythbusters = shows[73388] # Return the show with the specified TVDBID
+
+    mythbusters.sync # Get all information about the show from Sick
+Beard
+    puts mythbusters.name # MythBusters
+    puts mythbusters.episodes.count # 255
+    puts mythbusters.episodes.first.name # MythBusters Young Scientists
+Special
+    puts mythbusters.episodes.first.location # nil
+
+    mythbusters.episode.first
 
 The specs for this Gem should give you some idea of how to make use of
 the API. For now they will be the usage information. As always Pull
