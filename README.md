@@ -32,6 +32,14 @@ Or install it yourself as:
 
 ## Usage
 
+    require 'sickbeard'
+    SickBeard.key = 'b41c7591977d20e3582774105246e916'
+    SickBeard.client = 'http://toodles:8081'
+
+    shows = SickBeard::Shows.new
+    shows.map { |show| show.name } # Array of all the show names
+    shows[73388] # Return the show with the specified TVDBID
+
 The specs for this Gem should give you some idea of how to make use of
 the API. For now they will be the usage information. As always Pull
 Requests for better documentation are welcome.
